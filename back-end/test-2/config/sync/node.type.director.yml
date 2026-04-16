@@ -1,0 +1,17 @@
+uuid: 5c73e57d-d631-4517-a3d9-234b4a8c38fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Director
+type: director
+description: 'Director content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

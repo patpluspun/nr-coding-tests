@@ -1,0 +1,8 @@
+uuid: f7a1a65b-a637-497c-b02a-d5fdee806822
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Add movie genres as terms.'
+weight: 0

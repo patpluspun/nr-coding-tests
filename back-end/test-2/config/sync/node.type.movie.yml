@@ -1,0 +1,17 @@
+uuid: 1019b1ef-80b6-4907-a015-97329351c64f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Movie
+type: movie
+description: 'Movie content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

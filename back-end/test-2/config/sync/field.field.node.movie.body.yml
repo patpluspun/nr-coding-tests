@@ -1,0 +1,26 @@
+uuid: 1ffbadb1-6736-47f7-8f22-71e83a660fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - node.type.movie
+  module:
+    - text
+id: node.movie.body
+field_name: body
+entity_type: node
+bundle: movie
+label: Plot
+description: 'Add  a plot synopsis here.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary
