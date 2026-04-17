@@ -1,0 +1,23 @@
+uuid: db2ebe24-3d2f-42c5-b155-027532834623
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.movie
+id: node.movie.field_year
+field_name: field_year
+entity_type: node
+bundle: movie
+label: Year
+description: 'Year the movie was released.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1888
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

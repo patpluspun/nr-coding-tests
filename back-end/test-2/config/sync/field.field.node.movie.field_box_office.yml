@@ -1,0 +1,23 @@
+uuid: 2c8d30bc-ca09-4027-ab4f-04ca4417c39a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box_office
+    - node.type.movie
+id: node.movie.field_box_office
+field_name: field_box_office
+entity_type: node
+bundle: movie
+label: 'Box Office'
+description: 'The box office revenue from this movie.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

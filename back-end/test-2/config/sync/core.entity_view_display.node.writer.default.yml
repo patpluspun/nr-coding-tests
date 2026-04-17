@@ -1,0 +1,28 @@
+uuid: dbddcb84-3c58-44bd-9aab-7e12326ef190
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.writer.body
+    - node.type.writer
+  module:
+    - text
+    - user
+id: node.writer.default
+targetEntityType: node
+bundle: writer
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

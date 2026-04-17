@@ -1,19 +1,19 @@
-uuid: f1f17dc5-806f-41f1-9018-9a4486f19fd7
+uuid: 32812339-b15d-4fa1-9152-186a52a6ee78
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - filter.format.basic_html
-    - node.type.director
+    - node.type.writer
   module:
     - text
-id: node.director.body
+id: node.writer.body
 field_name: body
 entity_type: node
-bundle: director
+bundle: writer
 label: Bio
-description: "The director's biography."
+description: "The writer's biography."
 required: false
 translatable: true
 default_value: {  }

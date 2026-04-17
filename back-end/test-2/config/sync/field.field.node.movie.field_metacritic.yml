@@ -1,0 +1,23 @@
+uuid: 968a1ebf-e432-445a-98cc-3e47fd002ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metacritic
+    - node.type.movie
+id: node.movie.field_metacritic
+field_name: field_metacritic
+entity_type: node
+bundle: movie
+label: Metacritic
+description: 'The Metacritic rating for this movie.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: /100
+field_type: integer

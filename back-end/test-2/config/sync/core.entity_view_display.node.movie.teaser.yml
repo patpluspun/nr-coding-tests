@@ -6,7 +6,16 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.movie.body
     - field.field.node.movie.field_actors
+    - field.field.node.movie.field_box_office
     - field.field.node.movie.field_director
+    - field.field.node.movie.field_imdb_id
+    - field.field.node.movie.field_imdb_rating
+    - field.field.node.movie.field_imdb_votes
+    - field.field.node.movie.field_metacritic
+    - field.field.node.movie.field_poster
+    - field.field.node.movie.field_rotten_tomatoes
+    - field.field.node.movie.field_writer
+    - field.field.node.movie.field_year
     - node.type.movie
   module:
     - text
@@ -31,4 +40,13 @@ content:
     region: content
 hidden:
   field_actors: true
+  field_box_office: true
   field_director: true
+  field_imdb_id: true
+  field_imdb_rating: true
+  field_imdb_votes: true
+  field_metacritic: true
+  field_poster: true
+  field_rotten_tomatoes: true
+  field_writer: true
+  field_year: true

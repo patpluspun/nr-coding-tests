@@ -1,4 +1,4 @@
-uuid: 1019b1ef-80b6-4907-a015-97329351c64f
+uuid: e6c091e0-425d-4762-a3a6-e2ba8f2752ae
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Movie
-type: movie
-description: 'Movie content type.'
+name: Writer
+type: writer
+description: 'Writer content type.'
 help: null
 new_revision: false
 preview_mode: 1

@@ -1,0 +1,23 @@
+uuid: 612d5eaa-d7dc-4dbd-a3cc-544620bc6263
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rotten_tomatoes
+    - node.type.movie
+id: node.movie.field_rotten_tomatoes
+field_name: field_rotten_tomatoes
+entity_type: node
+bundle: movie
+label: 'Rotten Tomatoes'
+description: 'The Rotten Tomatoes rating for this movie.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: '%'
+field_type: integer

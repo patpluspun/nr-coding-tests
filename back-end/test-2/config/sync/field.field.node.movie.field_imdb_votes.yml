@@ -1,0 +1,23 @@
+uuid: d7ade98a-7f05-47b5-8475-3d284ff9452c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imdb_votes
+    - node.type.movie
+id: node.movie.field_imdb_votes
+field_name: field_imdb_votes
+entity_type: node
+bundle: movie
+label: 'IMDB Votes'
+description: 'The total votes this movie has received on IMDB.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
