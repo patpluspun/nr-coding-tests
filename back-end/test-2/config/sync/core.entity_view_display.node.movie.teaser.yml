@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.movie.body
     - field.field.node.movie.field_actors
     - field.field.node.movie.field_box_office
+    - field.field.node.movie.field_categories
     - field.field.node.movie.field_director
     - field.field.node.movie.field_imdb_id
     - field.field.node.movie.field_imdb_rating
@@ -41,6 +42,7 @@ content:
 hidden:
   field_actors: true
   field_box_office: true
+  field_categories: true
   field_director: true
   field_imdb_id: true
   field_imdb_rating: true
