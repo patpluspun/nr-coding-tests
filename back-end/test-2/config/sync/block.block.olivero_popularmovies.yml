@@ -15,6 +15,6 @@ plugin: popular_movie_block
 settings:
   id: popular_movie_block
   label: 'Popular Movies'
-  label_display: visible
+  label_display: '0'
   provider: nr_review
 visibility: {  }
