@@ -1,0 +1,20 @@
+uuid: 4a28f4c4-8bd1-4740-a0a4-cd38a6c6442f
+langcode: en
+status: true
+dependencies:
+  module:
+    - nr_review
+  theme:
+    - olivero
+id: olivero_popularmovies
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: popular_movie_block
+settings:
+  id: popular_movie_block
+  label: 'Popular Movies'
+  label_display: visible
+  provider: nr_review
+visibility: {  }

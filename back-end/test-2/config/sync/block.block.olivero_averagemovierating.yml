@@ -1,0 +1,28 @@
+uuid: 312bfafb-615e-43a2-8069-61cf15939893
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - nr_review
+  theme:
+    - olivero
+id: olivero_averagemovierating
+theme: olivero
+region: sidebar
+weight: -7
+provider: null
+plugin: average_rating_block
+settings:
+  id: average_rating_block
+  label: 'Average Movie Rating'
+  label_display: visible
+  provider: nr_review
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      movie: movie

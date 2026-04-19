@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.movie.field_year
     - node.type.movie
   module:
+    - image
     - text
     - user
 id: node.movie.teaser
@@ -32,23 +33,70 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
-  links:
-    settings: {  }
+  field_categories:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 100
+    weight: 2
+    region: content
+  field_imdb_rating:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_metacritic:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_poster:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_rotten_tomatoes:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_year:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_actors: true
   field_box_office: true
-  field_categories: true
   field_director: true
   field_imdb_id: true
-  field_imdb_rating: true
   field_imdb_votes: true
-  field_metacritic: true
-  field_poster: true
-  field_rotten_tomatoes: true
   field_writer: true
-  field_year: true
+  links: true
