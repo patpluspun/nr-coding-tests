@@ -1,0 +1,6 @@
+services:
+  nr_review.commands:
+    class: Drupal\nr_review\Commands\ImportCommands
+    tags:
+      - { name: drush.command }
+    arguments: ["@state", "@messenger", "@nr_review.import"]

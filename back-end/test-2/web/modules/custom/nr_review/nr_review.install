@@ -1,0 +1,86 @@
+<?php
+/**
+ * @file
+ *
+ * Install file for nr_review module.
+ */
+
+function nr_review_schema() {
+  $schema['user_rating'] = [
+    'description' => 'Stores user ratings for movies.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key',
+      ],
+      'uid' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Unique Key: UID',
+      ],
+      'nid' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Unique Key: NID',
+      ],
+      'rating' => [
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 1,
+        'description' => 'User rating for movie',
+      ],
+      'ip' => [
+        'type' => 'varchar',
+        'length' => 16,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'User IP address',
+      ],
+    ],
+    'primary key' => [
+      'id',
+      'uid',
+      'nid',
+    ],
+    'indexes' => [
+      'uid' => ['uid'],
+      'nid' => ['nid'],
+    ],
+    'foreign keys' => [
+      'data_user' => [
+        'table' => 'users',
+        'columns' => [
+          'uid' => 'uid',
+        ],
+      ],
+      'data_node' => [
+        'table' => 'node',
+        'columns' => [
+          'nid' => 'nid',
+        ],
+      ],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ */
+function nr_review_install() {
+  \Drupal::state()->set('nr_review.first_import', TRUE);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function nr_review_uninstall() {
+  \Drupal::state()->delete('nr_review.first_import');
+}

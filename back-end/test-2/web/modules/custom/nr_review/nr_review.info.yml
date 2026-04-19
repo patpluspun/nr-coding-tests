@@ -1,0 +1,9 @@
+name: "New Relic Review"
+type: module
+description: "A movie review module for New Relic."
+
+core_version_requirement: ^10 || ^11
+package: NewRelic
+dependencies:
+  - drupal:system
+  - drupal:block

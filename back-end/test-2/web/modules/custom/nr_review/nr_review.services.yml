@@ -1,0 +1,13 @@
+services:
+  nr_review.import:
+    class: Drupal\nr_review\Import
+    arguments:
+      [
+        "@config.factory",
+        "@entity_type.manager",
+        "@string_translation",
+        "@http_client",
+        "@file.repository",
+        "@file.usage",
+        "@messenger",
+      ]
