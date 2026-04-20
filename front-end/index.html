@@ -9,9 +9,532 @@
 </head>
 
 <body>
- <header></header>
- <main></main>
- <footer></footer>
+ <header class="bg-white px-6 py-4">
+  <div class="container mx-auto flex items-center justify-between">
+
+    <a href="#" class="flex items-center space-x-2 flex-shrink-0">
+      <img src="src/images/logos/new-relic.png" alt="New Relic" class="h-8">
+      <span class="text-xl font-bold font-sans text-gray-950">New Relic<span class="font-extralight text-sm">®</span></span>
+    </a>
+
+    <div class="flex items-center space-x-4 md:hidden">
+      <button class="text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </button>
+
+      <button class="text-gray-600 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="hidden md:flex flex-grow items-center justify-between font-sans">
+
+      <ul class="flex-grow flex justify-center items-center space-x-8 text-sm font-medium text-gray-700">
+        <li><a href="#" class="hover:text-blue-700">Products</a></li>
+        <li><a href="#" class="hover:text-blue-700">Pricing</a></li>
+        <li><a href="#" class="hover:text-blue-700">Solutions</a></li>
+        <li><a href="#" class="hover:text-blue-700">Help Center</a></li>
+        <li><a href="#" class="hover:text-blue-700">About</a></li>
+      </ul>
+
+      <div class="flex items-center space-x-6 text-sm flex-shrink-0">
+        <button class="text-gray-600 hover:text-blue-700 focus:outline-none">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <a href="#" class="font-medium text-gray-700 hover:text-blue-700">Log in</a>
+        <button class="bg-[#007e8a] hover:bg-[#006670] text-white font-semibold py-2.5 px-6 rounded-md">
+          Sign up
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+ <main>
+    <section class="py-24 px-4 text-center font-sans">
+        <h1 class="text-4xl md:text-5xl font-normal text-gray-800 leading-tight mb-4">
+            Simple, transparent pricing plans.<br />
+            Only pay for what you use.
+        </h1>
+
+        <p class="text-sm md:text-base text-gray-500 font-light tracking-wide">
+            Start for free. No credit card required.
+        </p>
+    </section>
+    <section class="grid !grid-cols-1 md:!grid-cols-2 lg:!grid-cols-4 max-w-7xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200 py-16">
+        <div class="border-b md:border-b-0 md:border-r border-gray-200">
+            <header class="bg-[#00a9b8] p-6">
+                <h3 class="text-white text-xl font-semibold">Free</h3>
+            </header>
+            <section class="p-8">
+                <p class="text-gray-700 leading-relaxed mb-8">For individuals just getting started with New Relic or test projects.</p>
+                <span class="text-4xl font-bold text-gray-900">$0</span>
+                <span class="text-gray-500 text-lg"> / Forever</span>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">100 GBs / month free</p>
+                            <p class="text-gray-500 text-sm italic">$0.25 / GB beyond</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">1 Free Full Platform User</p>
+                            <p class="text-gray-500 text-sm italic">Access to all capabilities</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="w-full bg-[#00838F] hover:bg-[#006670] text-white font-bold py-3 px-6 rounded-lg transition-colors mb-8">Start for Free</button>
+                <hr class="border-gray-200 mb-8" />
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Unlimited Basic users, queries, dashboards &amp; alerts</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Standard retention</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="border-b md:border-b-0 lg:border-r border-gray-200">
+            <header class="bg-[#0069CE] p-6">
+                <h3 class="text-white text-xl font-semibold">Standard</h3>
+            </header>
+            <section class="p-8">
+                <p class="text-gray-700 leading-relaxed mb-8">For growing teams monitoring production apps.</p>
+                <span class="text-4xl font-bold text-gray-900">$0.25</span>
+                <span class="text-gray-500 text-lg"> / GB</span>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">100 GBs / month free</p>
+                            <p class="text-gray-500 text-sm italic">$0.25 / GB beyond</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">$99 / full platform user</p>
+                            <p class="text-gray-500 text-sm italic">Includes 1 free, max of 5</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">$49 / Core User</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="w-full bg-[#00838F] hover:bg-[#006670] text-white font-bold py-3 px-6 rounded-lg transition-colors mb-8">Start Now</button>
+                <hr class="border-gray-200 mb-8" />
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Unlimited Basic users, queries, dashboards &amp; alerts</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Standard retention</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="border-b md:border-b-0 md:border-r  border-gray-200">
+            <header class="bg-[#FF8853] p-6">
+                <h3 class="text-white text-xl font-semibold">Pro</h3>
+            </header>
+            <section class="p-8">
+                <p class="text-gray-700 leading-relaxed mb-8">For teams and companies with more than 5 engineers and complex workloads.</p>
+                <span class="text-2xl font-semibold text-gray-800 tracking-tight mb-4">Contact for pricing</span>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">100 GBs / month free</p>
+                            <p class="text-gray-500 text-sm italic">$0.25 / GB beyond</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">Predictable full-platform &amp; core user commit pricing</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="w-full bg-transparent border border-[#007e8a] text-[#007e8a] hover:bg-[#007e8a] hover:text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200">Contact Sales</button>
+                <hr class="border-gray-200 mb-8" />
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Unlimited Basic users, queries, dashboards &amp; alerts</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Extended retention</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Advanced admin features</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">24x7 support availability</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="border-b md:border-b-0 md:border-r  border-gray-200">
+            <header class="bg-[#2C2C2C] p-6">
+                <h3 class="text-white text-xl font-semibold">Enterprise</h3>
+            </header>
+            <section class="p-8">
+                <p class="text-gray-700 leading-relaxed mb-8">For companies with advanced security and support needs.</p>
+                <span class="text-2xl font-semibold text-gray-800 tracking-tight mb-4">Contact for pricing</span>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">100 GBs / month free</p>
+                            <p class="text-gray-500 text-sm italic">$0.25 / GB beyond</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <div>
+                            <p class="text-gray-900 font-medium">Predictable full-platform &amp; core user commit pricing</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="w-full bg-transparent border border-[#007e8a] text-[#007e8a] hover:bg-[#007e8a] hover:text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200">Contact Sales</button>
+                <hr class="border-gray-200 mb-8" />
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Unlimited Basic users, queries, dashboards & alerts</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Extended retention</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">Enterprise admin, security &amp; compliance features</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-gray-700 mr-2">✔</span>
+                        <p class="text-gray-700">24x7 designated support + priority ticket routing</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    <section class="compare max-w-7xl mx-auto px-4 py-16 font-sans md:hidden">
+        <div class="text-center mb-12">
+            <h4 class="text-2xl font-semibold text-gray-800 mb-2">Compare features and plans</h2>
+            <div class="flex justify-center">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+        </div>
+        <table class="w-full table-fixed border-collapse">
+            <thead>
+                <tr>
+                    <th class="w-1/3"></th>
+                    <th class="border-t-4 border-[#00a9b8] bg-gray-50 p-6 text-gray-700 font-medium">Free</th>
+                    <th class="border-t-4 border-[#1d76d3] bg-gray-50 p-6 text-gray-700 font-medium">Standard</th>
+                    <th class="border-t-4 border-[#ff8a5c] bg-white p-6 text-gray-700 font-medium">Pro</th>
+                    <th class="border-t-4 border-[#2d2d2d] bg-gray-50 p-6 text-gray-700 font-medium">Enterprise</th>
+                </tr>
+            </thead>
+            <tbody class="text-sm">
+                <tr>
+                    <td colspan="5" class="pt-12 py-9 pb-4 text-[11px] font-bold text-gray-900 uppercase tracking-widest">Data Usage</td>
+                </tr>
+                <tr class="border-t border-gray-200">
+                    <td class="py-7 text-gray-700 font-normal">Free limits</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">100GB free / month</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">100GB free / month</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">100GB free / month</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">100GB free / month</td>
+                </tr>
+                <tr class="border-t border-gray-200">
+                    <td class="py-7 text-gray-700">Cost per GB</td>
+                    <td class="py-7 text-center text-gray-500 border-l border-gray-100">N/A</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">$0.25 / GB beyond<br>free limit</td>
+                    <td class="py-7 text-center text-gray-500 border-l border-gray-100">N/A</td>
+                    <td class="py-7 text-center text-gray-500 border-l border-gray-100">N/A</td>
+                </tr>
+                <tr class="border-t border-gray-200">
+                    <td class="py-7 text-gray-700">Retention</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">8+ days</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">8+ days</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">Extended</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">Extended</td>
+                </tr>
+                <tr class="border-t border-gray-200">
+                    <td class="py-7 text-gray-700 font-normal">HIPAA compliance</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center items-center">
+                            <div class="bg-[#68696E] rounded-full w-8 h-8 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-t border-gray-200 border-b">
+                    <td class="py-7 text-gray-700 font-normal">FedRAMP</td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center">
+                            <div class="bg-gray-100 rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-7 text-center text-gray-600 border-l border-gray-100">
+                        <div class="flex justify-center items-center">
+                            <div class="bg-[#68696E] rounded-full w-8 h-8 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="logos bg-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap items-center justify-center gap-12 md:gap-12 lg:gap-28">
+                <div class="flex items-center justify-center">
+                    <img src="src/images/logos/Homepage_Gray_EpicGames.png" alt="Epic Games" class="h-12 md:h-16 lg:h-16 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="src/images/logos/Homepage_Gray_Atlassian.png" alt="Atlassian" class="h-12 md:h-16 lg:h-16 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="src/images/logos/Homepage_Gray_Doordash.png" alt="Doordash" class="h-12 md:h-16 lg:h-16 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="src/images/logos/Homepage_Gray_Cloudflare.png" alt="Cloudflare" class="h-12 md:h-16 lg:h-16 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="src/images/logos/Homepage_Gray_Github.png" alt="Github" class="h-12 md:h-16 lg:h-16 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits bg-[#FAF8F9] py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h5 class="text-3xl md:text-4xl font-normal text-center text-gray-800 mb-16">Explore benefits of usage-based pricing</h5>
+            <div class="grid !grid-cols-1 md:!grid-cols-2 lg:!grid-cols-3 gap-8 lg:gap-12">
+                <div class="flex flex-col border border-gray-100 rounded-lg p-8 hover:shadow-lg transition-shadow min-h-[520px]">
+                    <img src="src/images/cards/card-1.png" alt="Cost comparison" class="w-full h-64 object-cover rounded-t-md mb-6">
+                    <div class="px-4 pb-6 flex flex-col flex-grow">
+                        <p class="text-2xl font-semibold text-gray-800 leading-snug mb-auto">Compare full-stack observability costs: New Relic, Datadog, and Dynatrace</p>
+                    </div>
+                    <a href="#" class="mt-8 text-[#007e8a] font-semibold flex items-center hover:underline">Read Article <span class="ml-2 text-2xl leading-none transform -translate-y-[3px] group-hover:translate-x-2 transition-transform">›</span>
+                    </a>
+                </div>
+                <div class="flex flex-col border border-gray-100 rounded-lg p-8 hover:shadow-lg transition-shadow min-h-[520px]">
+                    <img src="src/images/cards/card-2.png" alt="Consumption pricing" class="w-full h-64 object-cover rounded-t-md mb-6">
+                    <div class="px-4 pb-6 flex flex-col flex-grow">
+                        <p class="text-2xl font-semibold text-gray-800 leading-snug mb-auto">New Relic consumption pricing: Get more value for your money</p>
+                    </div>
+                    <a href="#" class="mt-8 text-[#007e8a] font-semibold flex items-center hover:underline">Read Article <span class="ml-2 text-2xl leading-none transform -translate-y-[3px] group-hover:translate-x-2 transition-transform">›</span>
+                    </a>
+                </div>
+                <div class="flex flex-col border border-gray-100 rounded-lg p-8 hover:shadow-lg transition-shadow min-h-[520px]">
+                    <img src="src/images/cards/card-3.png" alt="Simplified observability pricing" class="w-full h-64 object-cover rounded-t-md mb-6">
+                    <div class="px-4 pb-6 flex flex-col flex-grow">
+                        <p class="text-2xl font-semibold text-gray-800 leading-snug mb-auto">New Relic annual pool of funds simplifies observability pricing</p>
+                    </div>
+                    <a href="#" class="mt-8 text-[#007e8a] font-semibold flex items-center hover:underline">Read Article <span class="ml-2 text-2xl leading-none transform -translate-y-[3px] group-hover:translate-x-2 transition-transform">›</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-[#2d2d2d] text-white py-16 px-6 font-sans">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
+
+            <div class="lg:col-span-1">
+                <h6 class="text-3xl font-semibold mb-4">Try New Relic Today</h6>
+                <p class="text-gray-400 mb-8 max-w-sm">Monitor all your systems and data with the entire New Relic Platform. It's free forever.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                <a href="#" class="bg-[#007e8a] hover:bg-[#00a9b8] text-white px-8 py-3 rounded text-center font-semibold transition-colors">Start for free</a>
+                <a href="#" class="border border-white hover:bg-white hover:text-[#2d2d2d] text-white px-8 py-3 rounded text-center font-semibold transition-colors">Get a demo</a>
+            </div>
+
+            <div class="hidden md:flex gap-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Follow Us</p>
+                <a href="#" id="github" class="text-gray-400 hover:text-white transition-all duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d='M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z' />
+                    </svg>
+                </a>
+                <a href="#" id="twitch" class="text-gray-400 hover:text-white transition-all duration-200">
+                     <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm12.5 5h-9v6.5h2.25v2h2l2-2h2.75V7zm-1.25 1.5v4h-2.5l-1.5 1.5v-1.5h-2.25v-4h6.25zm-4.25 1h-1.25v2h1.25v-2zm3 0h-1.25v2h1.25v-2z" />
+                    </svg>
+                </a>
+                <a href="#" id="twitter" class="text-gray-400 hover:text-white transition-all duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm13.165 7.151c.005.109.005.218.005.328 0 3.351-2.551 7.214-7.214 7.214-1.432 0-2.764-.419-3.887-1.138.199.023.4.034.606.034 1.188 0 2.28-.405 3.148-1.084-1.11-.02-2.046-.754-2.368-1.761.155.03.313.045.476.045.231 0 .455-.031.667-.089-1.16-.233-2.033-1.256-2.033-2.484v-.031c.341.19.732.304 1.147.318-.68-.454-1.127-1.23-1.127-2.106 0-.464.124-.899.342-1.274 1.251 1.534 3.118 2.545 5.224 2.651-.044-.185-.066-.379-.066-.578 0-1.4 1.135-2.535 2.535-2.535.73 0 1.389.308 1.851.801.578-.114 1.121-.325 1.611-.616-.19.593-.591 1.091-1.116 1.405.513-.061 1.003-.198 1.458-.4a2.554 2.554 0 0 1-1.266 1.314z" />
+                    </svg>
+                </a>
+                <a href="#" id="facebook" class="text-gray-400 hover:text-white transition-all duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"/>
+                    </svg>
+                </a>
+                <a href="#" id="linkedin" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="#" id="instagram" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" id="youtube" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+	                        <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M339,617c0,5.5-4.5,10-10,10h-432c-5.5,0-10-4.5-10-10V185c0-5.5,4.5-10,10-10h432c5.5,0,10,4.5,10,10V617z"/>
+	                        <path d="M196.9,311.2H29.1c0,0-44.1,0-44.1,44.1v91.5c0,0,0,44.1,44.1,44.1h167.8c0,0,44.1,0,44.1-44.1v-91.5 C241,355.3,241,311.2,196.9,311.2z M78.9,450.3v-98.5l83.8,49.3L78.9,450.3z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="lg:ml-auto">
+            <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Company</p>
+            <ul class="space-y-4 text-sm text-gray-300">
+                <li><a href="#" class="hover:text-white transition-colors">About us</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Leadership</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Diversity and Inclusion</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Social Impact</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Newsroom</a></li>
+            </ul>
+        </div>
+
+        <div class="lg:ml-auto">
+            <h3 class="opacity-0 mb-6 hidden lg:block">Spacer</h3> <ul class="space-y-4 text-sm text-gray-300">
+                <li><a href="#" class="hover:text-white transition-colors">Customers</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Partner Program</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Investor Relations</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Suppliers Portal</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="color-bars flex flex-col gap-3 w-64 p-6">
+            <div class="h-1.5 w-full bg-white/5 rounded-full">
+                <div class="animate-bar h-full bg-[#1ce783] rounded-full shadow-[0_0_12px_rgba(28,231,131,0.3)]"
+                style="width: 65%;">
+                </div>
+            </div>
+
+            <div class="h-1.5 w-full bg-white/5 rounded-full">
+                <div class="animate-bar h-full bg-[#00e5ff] rounded-full shadow-[0_0_12px_rgba(0,229,255,0.3)]"
+                style="width: 85%; animation-delay: 0.2s;">
+                </div>
+            </div>
+
+            <div class="h-1.5 w-full bg-white/5 rounded-full">
+                <div class="animate-bar h-full bg-[#9ca3af] rounded-full" style="width: 30%; animation-delay: 0.4s;">
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden flex gap-6 pt-6 border-t border-gray-700"></div>
+    </div>
+
+    <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs text-gray-400">
+            <a href="#" class="hover:text-white">Terms of Service</a>
+            <a href="#" class="hover:text-white">DMCA Policy</a>
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Cookie Policy</a>
+            <a href="#" class="hover:text-white">UK Slavery Act of 2015</a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-400">
+            <a href="#" class="hover:text-white">日本語</a>
+            <a href="#" class="hover:text-white">Français</a>
+            <a href="#" class="hover:text-white">Deutsch</a>
+            <a href="#" class="hover:text-white">한국어</a>
+        </div>
+    </div>
+
+    <div class="mt-8 text-xs text-gray-500 text-center md:text-left">©2008-20 New Relic, Inc. All rights reserved
+    </div>
+</footer>
 </body>
 
 </html>

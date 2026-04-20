@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1",
+    "ls": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.4.3"
   }
