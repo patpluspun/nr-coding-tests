@@ -44,3 +44,9 @@ Double and triple check that everything looks good, and feel free to add comment
 Email a link back to your repository for us to review. We should be able to clone it locally, run the `npm run dev` command and verify the project. We will most likely use Google Chrome or Firefox to test out the various viewports.
 
 You have 48 hours from now to return this exercise back to us. Good luck, and feel free to reach out with any questions!
+
+---
+
+I ran out of time to finish this, but I am submitting what I got done so far.  I am mostly unfamiliar with tailwind, having used it only a few times several years ago and deciding I wasn't a huge fan, so I relied very heavily on an LLM to generate this code (and the SVG icons).
+
+The hamburger menu is not finished, the footer is not responsive, and the card grid on top is not exactly perfect. With another 8 hours I could fix all this but I didn't want to turn this in any later than it already is.
