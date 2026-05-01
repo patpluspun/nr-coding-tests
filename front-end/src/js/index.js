@@ -36,4 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Adds special classes to all buttons.
+  const allButtons = document.querySelectorAll('button');
+  const width = window.innerWidth;
+
+  allButtons.forEach(button => {
+    if (width < 768) {
+      button.classList.add('mobile');
+    }
+    else if (width >= 768 && width < 1024) {
+      button.classList.add('tablet');
+    }
+  });
+
 });

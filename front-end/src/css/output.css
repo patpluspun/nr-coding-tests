@@ -3808,6 +3808,14 @@ footer {
     margin-right: auto;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3834,6 +3842,14 @@ footer {
 
   .lg\:h-64 {
     height: 16rem;
+  }
+
+  .lg\:min-h-\[3rem\] {
+    min-height: 3rem;
+  }
+
+  .lg\:min-h-\[4rem\] {
+    min-height: 4rem;
   }
 
   .lg\:w-auto {
