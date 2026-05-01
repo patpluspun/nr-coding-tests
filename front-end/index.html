@@ -34,48 +34,36 @@
     </div>
 
     <nav id="nav-menu" class="hidden bg-white shadow-2xl lg:shadow-none absolute top-full right-0 w-full max-w-[50%] md:max-w-[300px] z-50 lg:z-auto px-6 py-8 lg:relative lg:flex lg:max-w-none lg:w-auto lg:bg-transparent flex-grow items-center justify-between font-sans">
-        <ul class="flex flex-col lg:flex-row gap-4 lg:gap-6 flex-grow justify-center items-start lg:items-center lg:space-x-8 text-sm font-medium text-gray-700">
-            <li class="w-full text-left">
+        <ul class="flex flex-col lg:flex-row gap-4 lg:min-w-[960px] lg:gap-8 flex-grow justify-center items-start lg:items-center text-sm lg:text-base font-medium text-gray-700">
+            <li class="w-full text-left lg:w-auto lg:ml-20">
                 <a href="#" class="block py-2 hover:text-blue-700">Products</a>
             </li>
-            <li class="w-full text-left">
+            <li class="w-full text-left lg:w-auto">
                 <a href="#" class="block py-2 hover:text-blue-700">Pricing</a>
             </li>
-            <li class="w-full text-left">
+            <li class="w-full text-left lg:w-auto">
                 <a href="#" class="block py-2 hover:text-blue-700">Solutions</a>
             </li>
-            <li class="w-full text-left">
+            <li class="w-full text-left lg:w-auto">
                 <a href="#" class="block py-2 hover:text-blue-700">Help Center</a>
             </li>
-            <li class="w-full text-left">
+            <li class="w-full text-left lg:w-auto lg:mr-auto">
                 <a href="#" class="block py-2 hover:text-blue-700">About</a>
             </li>
-            <li class="search hidden lg:inline-block">
+            <li class="search hidden lg:w-auto lg:inline-block lg:ml-auto">
                 <button class="desktop-search hidden lg:inline-block text-gray-600 hover:text-blue-700 focus:outline-none">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </button>
             </li>
-            <li class="login w-full text-left"><a href="#" class="block py-2 font-medium text-gray-700 hover:text-blue-700">Log in</a></li>
-            <li class="signup w-full text-left">
+            <li class="login w-full text-left lg:w-auto"><a href="#" class="block py-2 font-medium text-gray-700 hover:text-blue-700">Log in</a></li>
+            <li class="signup w-full text-left lg:w-auto">
                 <button class="bg-[#007e8a] hover:bg-[#006670] text-white font-semibold py-2.5 px-6 rounded-md">
                 Sign up
                 </button>
             </li>
         </ul>
-
-        <!--<div class="flex items-center space-x-6 text-sm flex-shrink-0">
-            <button class="search hidden lg:inline-block text-gray-600 hover:text-blue-700 focus:outline-none">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-            <a href="#" class="font-medium text-gray-700 hover:text-blue-700">Log in</a>
-            <button class="bg-[#007e8a] hover:bg-[#006670] text-white font-semibold py-2.5 px-6 rounded-md">
-                Sign up
-            </button>
-        </div>-->
     </nav>
   </div>
 </header>
@@ -101,7 +89,7 @@
     <!-- Pricing Cards Section -->
     <div class="w-full flex justify-center lg:max-w-7xl mx-auto px-8 md:px-8">
     <section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:shadow-2xl lg:rounded-xl lg:overflow-hidden">
-        <div class="w-full shadow-2xl rounded-b-lg border-b md:border-b-0 lg:border-r border-gray-200">
+        <div class="w-full shadow-2xl lg:shadow-none rounded-b-lg border-b md:border-b-0 lg:border-r border-gray-200">
             <header class="bg-[#00a9b8] p-6 rounded-t-lg lg:rounded-none">
                 <h3 class="text-white text-l font-semibold">Free</h3>
             </header>
@@ -139,7 +127,7 @@
                 </ul>
             </section>
         </div>
-        <div class="w-full shadow-2xl border-b md:border-b-0 lg:border-r border-gray-200">
+        <div class="w-full shadow-2xl lg:shadow-none border-b md:border-b-0 lg:border-r border-gray-200">
             <header class="bg-[#0069CE] p-6 rounded-t-lg lg:rounded-none">
                 <h3 class="text-white text-l font-semibold">Standard</h3>
             </header>
@@ -183,7 +171,7 @@
                 </ul>
             </section>
         </div>
-        <div class="w-full shadow-2xl border-b md:border-b-0 lg:border-r border-gray-200">
+        <div class="w-full shadow-2xl lg:shadow-none border-b md:border-b-0 lg:border-r border-gray-200">
             <header class="bg-[#FF8853] p-6 rounded-t-lg lg:rounded-none">
                 <h3 class="text-white text-l font-semibold">Pro</h3>
             </header>
@@ -229,7 +217,7 @@
                 </ul>
             </section>
         </div>
-        <div class="w-full shadow-2xl border-b md:border-b-0 lg:border-r border-gray-200">
+        <div class="w-full shadow-2xl lg:shadow-none border-b md:border-b-0 lg:border-r border-gray-200">
             <header class="bg-[#2C2C2C] p-6 rounded-t-lg lg:rounded-none">
                 <h3 class="text-white text-l font-semibold">Enterprise</h3>
             </header>
@@ -464,15 +452,15 @@
 <footer class="bg-[#2d2d2d] text-white py-16 px-6 md:px-12 font-sans">
     <div class="max-w-7xl mx-auto">
 
-        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-8 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-6 md:gap-8 lg:gap-4 mb-8">
 
-            <div class="col-span-1 md:col-span-2 md:max-w-[90%]">
+            <div class="col-span-1 md:col-span-2 md:max-w-[90%] lg:col-span-1 lg:pr-20">
                 <h6 class="text-xl font-semibold mb-4">Try New Relic Today</h6>
                 <p class="text-gray-200 mb-8 max-w-sm text-sm">Monitor all your systems and data with the entire New Relic Platform. It's free forever.</p>
 
                 <div class="flex flex-col md:flex-row gap-4 mb-4">
                     <a href="#" class="bg-[#007e8a] hover:bg-[#00a9b8] text-white px-4 py-3 rounded text-center transition-colors">Start for free</a>
-                    <a href="#" class="border border-white hover:bg-white hover:text-[#2d2d2d] text-white px-4 py-3 rounded text-center transition-colors">Get a demo</a>
+                    <a href="#" class="border border-white hover:bg-white hover:text-[#2d2d2d] text-white px-4 py-3 lg:ml-4 rounded text-center transition-colors">Get a demo</a>
                 </div>
             </div>
 
@@ -499,7 +487,7 @@
                 </ul>
             </div>
 
-            <div class="col-span-1 md:col-span-1 mb-5 md:mt-[-6.5rem] md:mb-[7rem]">
+            <div class="col-span-1 md:col-span-1 mb-5 md:mt-[-6.5rem] md:mb-[7rem] lg:mt-2 lg:mb-0">
                 <p class="text-xs uppercase tracking-widest text-gray-300 mt-5 md:mt-2 mb-6">Follow Us</p>
                 <ul class="grid grid-cols-4 gap-4 p-0 w-fit text-gray-200 hover:text-white transition-all duration-200">
                     <li>
