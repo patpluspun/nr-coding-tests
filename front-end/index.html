@@ -83,7 +83,7 @@
     <!-- Hero Section -->
     <section class="py-12 px-10 text-center font-sans">
         <h1 class="text-4xl font-normal text-gray-800 leading-tight mb-8">
-            <span class="hidden md:inline lg:inline">
+            <span class="hidden md:inline">
             Simple, transparent pricing plans.<br />
             Only pay for what you use.
             </span>
@@ -91,7 +91,7 @@
         </h1>
 
         <p class="text-md md:text-base font-light tracking-wide">
-            <span class="hidden md:inline lg:inline">
+            <span class="hidden md:inline">
             Start for free. No credit card required.
             </span>
             <span class="md:hidden">Start for free. Then pay a predictable per-user price and $0.25 per GB as your needs grow.</span>
@@ -461,34 +461,36 @@
 </main>
 
 <!-- Footer Section -->
-<footer class="bg-[#2d2d2d] text-white py-16 px-6 font-sans">
+<footer class="bg-[#2d2d2d] text-white py-16 px-6 md:px-12 font-sans">
     <div class="max-w-7xl mx-auto">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-8 mb-8">
 
-            <div class="lg:col-span-1">
+            <div class="col-span-1 md:col-span-2 md:max-w-[90%]">
                 <h6 class="text-xl font-semibold mb-4">Try New Relic Today</h6>
-                <p class="text-gray-200 mb-8 max-w-sm">Monitor all your systems and data with the entire New Relic Platform. It's free forever.</p>
+                <p class="text-gray-200 mb-8 max-w-sm text-sm">Monitor all your systems and data with the entire New Relic Platform. It's free forever.</p>
 
-            <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                <a href="#" class="bg-[#007e8a] hover:bg-[#00a9b8] text-white px-4 py-3 rounded text-center transition-colors">Start for free</a>
-                <a href="#" class="border border-white hover:bg-white hover:text-[#2d2d2d] text-white px-4 py-3 rounded text-center transition-colors">Get a demo</a>
+                <div class="flex flex-col md:flex-row gap-4 mb-4">
+                    <a href="#" class="bg-[#007e8a] hover:bg-[#00a9b8] text-white px-4 py-3 rounded text-center transition-colors">Start for free</a>
+                    <a href="#" class="border border-white hover:bg-white hover:text-[#2d2d2d] text-white px-4 py-3 rounded text-center transition-colors">Get a demo</a>
+                </div>
             </div>
 
-            <div class="lg:ml-auto">
-                <p class="text-xs uppercase tracking-widest text-gray-300 mb-5">Company</p>
+            <div class="col-span-1 md:col-span-1">
+                <p class="text-xs uppercase tracking-widest text-gray-300 mb-5 mt-5">Company</p>
                 <ul class="space-y-5 text-sm text-gray-200">
                     <li><a href="#" class="hover:text-white transition-colors">About us</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Leadership</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Diversity, Equity and Inclusion</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors md:hidden">Diversity, Equity and Inclusion</a>
+                    <a href="#" class="hover:text-white transition-colors hidden md:inline-block">Diversity and Inclusion</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Social Impact</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Newsroom</a></li>
                 </ul>
             </div>
 
-            <div class="lg:ml-auto">
-                 <ul class="space-y-5 text-sm text-gray-200 mt-5">
+            <div class="col-span-1 md:col-span-1 md:pt-14">
+                 <ul class="space-y-5 text-sm text-gray-200">
                     <li><a href="#" class="hover:text-white transition-colors">Customers</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Partner Program</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Investor Relations</a></li>
@@ -497,8 +499,8 @@
                 </ul>
             </div>
 
-            <div class="md:flex">
-                <p class="text-xs uppercase tracking-widest text-gray-300 mt-10 mb-6">Follow Us</p>
+            <div class="col-span-1 md:col-span-1 mb-5 md:mt-[-6.5rem] md:mb-[7rem]">
+                <p class="text-xs uppercase tracking-widest text-gray-300 mt-5 md:mt-2 mb-6">Follow Us</p>
                 <ul class="grid grid-cols-4 gap-4 p-0 w-fit text-gray-200 hover:text-white transition-all duration-200">
                     <li>
                         <a href="#" id="github">
@@ -575,7 +577,7 @@
             </div>
         </div>
 
-        <div class="md:hidden">
+        <div class="md:hidden mb-8">
             <p class="text-xs uppercase tracking-widest text-gray-300 mt-4 mb-2">Download the New Relic App</p>
             <ul class="grid grid-cols-2 gap-4 p-0 w-fit">
                 <li>
