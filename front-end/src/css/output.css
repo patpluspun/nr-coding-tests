@@ -3768,6 +3768,10 @@ footer {
     position: relative;
   }
 
+  .lg\:right-40 {
+    right: 10rem;
+  }
+
   .lg\:z-auto {
     z-index: auto;
   }

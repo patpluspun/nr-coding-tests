@@ -8,28 +8,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Opens up search field.
-  const searchButton = document.getElementById('search');
+  const searchTriggers = document.querySelectorAll('.search-trigger');
   const searchInput = document.getElementById('search-area');
 
-  searchButton.addEventListener('click', (event) => {
-    event.stopPropagation();
+  searchTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (event) => {
+      event.stopPropagation();
 
-    searchInput.classList.toggle('hidden');
+      searchInput.classList.toggle('hidden');
 
-    if (!searchInput.classList.contains('hidden')) {
-      searchInput.focus();
-    }
+      if (!searchInput.classList.contains('hidden')) {
+        searchInput.focus();
+      }
+    });
   });
 
   // Closes nav and search if clicked outside.
   document.addEventListener('click', (event) => {
     const insideMenu = button.contains(event.target) || menu.contains(event.target);
-    const insideSearch = searchInput.contains(event.target) || searchButton.contains(event.target);
+    const isTrigger = Array.from(searchTriggers).some(t => t.contains(event.target));
 
     if (!insideMenu) {
       menu.classList.add('hidden');
     }
-    if (!insideSearch) {
+    if (!searchInput.contains(event.target) && !isTrigger) {
       searchInput.classList.add('hidden');
     }
   });
